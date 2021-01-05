@@ -1,18 +1,78 @@
 body {
+        margin: 0px;
         font-family: 'Poppins', sans-serif;
 }
 h1 {
         font-size: 50px;
 }
-.name-highlight {
+h2 {
+        font-size: 40px;
+}
+p {
+        color: dimgrey;
+}
+.orange-highlight {
         color: orange;
 }
 .half-width {
-  width: 40%;
-  float: left;
-  margin-left: 5%;
-  padding-left: 2%;
+        width: 40%;
+        float: left;
+        margin-left: 5%;
+        padding-left: 2%;
 }
 .half-width img {
-  width: 100%;
+        width: 100%;
+}
+.top-banner {
+        background-image: url('images/top-banner.png');
+        background-repeat: no-repeat;
+}
+section {
+        height: 500px;
+        padding-bottom: 150px;
+}
+.link-button {
+        /* text-decoration none removed underline from a tag */
+        text-decoration: none;
+        /* background-color: orange; */
+        /* liner gradient determine from which color to what color, need to know about degree */
+        background-image: linear-gradient(45deg, lightSalmon, tomato);
+        padding: 10x 20px;
+        border-radius: 5px;
+        color: white;
+        font-weight: 700;
+}
+.dream-area {
+        background-image: url('images/dream-bg.png');
+        background-repeat: no-repeat;
+        background-position: right;
+}
+.single-experience {
+        /* 10 px top and bottom, 10 px right and left -- by default put solid black color. then we choose gray - it become solid gray. to give a shade or spread gray color in border we put 40px , th ecorner become sharp */
+        box-shadow: 10px 10px 40px gray;
+        border-radius: 10px;
+        height: 80%;
+        /* give background color later, to bring the circle back */
+        background-color: white;
+}
+.experience-area {
+        background-image: url('images/exp-bg.png');
+        background-repeat: no-repeat;
+        background-position: left;
+}
+#full-stack {
+        /* 7px solid give black color 
+        if you miss comma or deg in 180deg, see what happen */
+        border-left: 7px solid;
+        border-image: linear-gradient(180deg, lightSalmon, red);
+        border-image-slice: 1;
+}
+#baby-web {
+        border-left: 7px solid;
+        border-image: linear-gradient(180deg, blue, cyan);
+        border-image-slice: 1;
+}
+footer p {
+        text-align: center;
+        font-size: 10px;
 }
